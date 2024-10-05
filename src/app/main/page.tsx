@@ -1,4 +1,10 @@
+import { getNotionDatabase } from '../api/notion';
+
 export default function Main() {
+  const data = getNotionDatabase();
+
+  console.log(data);
+
   return (
     <>
       <header className="bg-white shadow">
